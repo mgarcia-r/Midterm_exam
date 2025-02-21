@@ -26,7 +26,7 @@ def days_since_birth(birthday):
     # Count the total days in all full years
     total_days = 0
     for year in range(start_year, end_year + 1):
-        total_days += 366 if leap_year(year) else 365
+        total_days += 366 if leap_year(year)  else 365
 
     return total_days
 
